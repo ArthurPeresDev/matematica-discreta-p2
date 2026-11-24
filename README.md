@@ -1,13 +1,14 @@
-# matematica-discreta-p2
+# Matemática Discreta - Parte 2
+
+Este repositório contém atividades desenvolvidas em C relacionadas aos temas de Grafos, Fechos e Princípio da Indução Finita (PiF).
+
+---
 
 # Atividade 6 - Número de Arestas de um Grafo Completo
-<br>
 
 ## Objetivo
 
 Calcular a quantidade de arestas de um grafo completo a partir do número de vértices informado pelo usuário.
-
-<br>
 
 ## Relação com Matemática Discreta
 
@@ -15,231 +16,199 @@ A Teoria dos Grafos é uma área importante da Matemática Discreta.
 
 Um grafo é formado por:
 
-- Vértices (nós)
-- Arestas (ligações)
+- Vértices (nós);
+- Arestas (ligações).
 
 Um grafo completo é aquele em que cada vértice está conectado a todos os outros vértices.
-
-<br>
 
 ## Fórmula Utilizada
 
 A quantidade de arestas de um grafo completo é dada por:
 
+```
 A = n(n - 1) / 2
+```
 
 Onde:
 
-- A = quantidade de arestas
-- n = quantidade de vértices
-
-<br>
+- A = quantidade de arestas;
+- n = quantidade de vértices.
 
 ## Funcionamento
 
 O programa solicita a quantidade de vértices e utiliza a fórmula matemática para calcular o número total de arestas.
 
-<br>
-
 ## Como compilar
 
+```bash
 gcc grafo_completo.c -o grafo_completo
-
-<br>
+```
 
 ## Como executar
 
+```bash
 ./grafo_completo
-
-<br>
+```
 
 ## Exemplo
 
+```text
 Digite a quantidade de vertices: 5
 
 O grafo completo possui 10 arestas.
+```
 
-<br>
+---
 
-# README - Atividade 7: Grau de um Vértice
+# Atividade 7 - Grau de um Vértice
 
-# Atividade 7 - Grau de um Vértice ## Objetivo Determinar o grau de um vértice em um grafo. 
+## Objetivo
 
-## Relação com Matemática Discreta Na Teoria dos Grafos, o grau de um vértice corresponde ao número de arestas conectadas a ele. O conhecimento do grau dos vértices é utilizado em diversos problemas envolvendo redes, rotas, conexões e análise de grafos. 
+Determinar o grau de um vértice em um grafo.
 
-## Funcionamento O usuário informa quantas arestas estão conectadas ao vértice. O programa realiza a contagem e apresenta o grau correspondente. 
+## Relação com Matemática Discreta
 
-## Como compilar gcc grau_vertice.c -o grau_vertice
+Na Teoria dos Grafos, o grau de um vértice corresponde ao número de arestas conectadas a ele.
+
+O conhecimento do grau dos vértices é utilizado em redes, rotas, conexões e análise de grafos.
+
+## Funcionamento
+
+O usuário informa quantas arestas estão conectadas ao vértice.
+
+O programa realiza a contagem e apresenta o grau correspondente.
+
+## Como compilar
+
+```bash
+gcc grau_vertice.c -o grau_vertice
+```
+
+## Exemplo
+
+```text
+Quantas arestas chegam ao vertice? 4
+
+O grau do vertice e 4
+```
+
+---
 
 # Atividade 8 - Fecho Reflexivo
-<br>
 
 ## Objetivo
 
 Gerar o fecho reflexivo de um conjunto.
 
-<br>
-
 ## Relação com Matemática Discreta
 
-O estudo de relações é um dos tópicos centrais da Matemática Discreta.
-
-Uma relação é reflexiva quando todos os elementos do conjunto se relacionam consigo mesmos.
+Uma relação é reflexiva quando todos os elementos de um conjunto se relacionam consigo mesmos.
 
 Exemplo:
 
+```text
 (1,1)
-
 (2,2)
-
 (3,3)
-
-<br>
+```
 
 ## Funcionamento
 
 O usuário informa a quantidade de elementos do conjunto.
 
-O programa gera automaticamente os pares ordenados necessários para que a relação seja reflexiva.
-
-<br>
+O programa gera os pares ordenados necessários para tornar a relação reflexiva.
 
 ## Como compilar
 
+```bash
 gcc fecho_reflexivo.c -o fecho_reflexivo
-
-<br>
-
-## Como executar
-
-./fecho_reflexivo
-
-<br>
+```
 
 ## Exemplo
 
+```text
 Quantidade de elementos do conjunto: 4
 
 Fecho reflexivo:
-
 (1,1)
-
 (2,2)
-
 (3,3)
-
 (4,4)
+```
 
-<br>
+---
 
 # Atividade 9 - Fecho Simétrico
-<br>
 
 ## Objetivo
 
 Identificar o par necessário para formar o fecho simétrico de uma relação.
 
-<br>
-
 ## Relação com Matemática Discreta
 
 Uma relação é simétrica quando:
 
+```text
 Se (a,b) pertence à relação,
-
 então (b,a) também pertence.
-
-O fecho simétrico consiste em adicionar os pares necessários para garantir essa propriedade.
-
-<br>
+```
 
 ## Funcionamento
 
 O usuário informa um par ordenado.
 
-O programa exibe a relação original e o par que deve ser acrescentado para garantir a simetria.
-
-<br>
+O programa exibe a relação original e o par necessário para garantir a simetria.
 
 ## Como compilar
 
+```bash
 gcc fecho_simetrico.c -o fecho_simetrico
-
-<br>
-
-## Como executar
-
-./fecho_simetrico
-
-<br>
+```
 
 ## Exemplo
 
+```text
 Digite o primeiro elemento: 1
-
 Digite o segundo elemento: 3
 
 Relacao original: (1,3)
-
 Par necessario para o fecho simetrico: (3,1)
+```
 
-<br>
+---
 
 # Atividade 10 - Soma dos N Primeiros Números Naturais
-<br>
 
 ## Objetivo
 
 Calcular a soma dos números naturais de 1 até N.
 
-<br>
-
 ## Relação com Matemática Discreta
 
-O Princípio da Indução Finita (PiF) é uma técnica de demonstração muito utilizada na Matemática Discreta.
+O Princípio da Indução Finita (PiF) é uma técnica de demonstração utilizada na Matemática Discreta.
 
-Uma das propriedades frequentemente demonstradas por indução é:
+Uma propriedade frequentemente demonstrada por indução é:
 
+```text
 1 + 2 + 3 + ... + n
-
-cujo resultado pode ser calculado por:
-
-n(n + 1) / 2
-
-Nesta atividade, a soma é realizada por meio de repetições para ilustrar o processo.
-
-<br>
+```
 
 ## Funcionamento
 
 O usuário informa um número inteiro positivo.
 
-O programa soma todos os números de 1 até o valor informado e exibe o resultado.
-
-<br>
+O programa realiza a soma de todos os números de 1 até o valor informado.
 
 ## Como compilar
 
+```bash
 gcc soma_naturais.c -o soma_naturais
-
-<br>
-
-## Como executar
-
-./soma_naturais
-
-<br>
+```
 
 ## Exemplo
 
+```text
 Digite um numero inteiro positivo: 5
 
 A soma de 1 ate 5 e 15
-
-<br>
-
-## Verificação Matemática
-
-1 + 2 + 3 + 4 + 5 = 15
-
-<br>
+```
